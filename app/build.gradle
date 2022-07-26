@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    // add kotlin extensions for "import kotlinx.android.synthetic.main.activity_main.*"
+    id 'kotlin-android-extensions'
 }
 
 android {

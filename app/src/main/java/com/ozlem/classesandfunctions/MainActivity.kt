@@ -4,21 +4,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
+// To sync MainActivity and xml files:
+import kotlinx.android.synthetic.main.activity_main.*
 
-// onClick method doesn't working at the moment!!!
 
 class MainActivity : AppCompatActivity() {
-
-    // value definition:
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // value initialize:
-        var textView : TextView = findViewById(R.id.textViewID)
+        // value define and initialize:
+        //var textView : TextView = findViewById(R.id.textViewID)
 
         var j = 0
 
@@ -28,25 +26,13 @@ class MainActivity : AppCompatActivity() {
             println(secondFunction())
         }
 
-        // take input:
-        // "Unit" means empty or space at Kotlin. It is proof that it will not return any object at the end.
-        fun substraction(x : Int , y : Int){
-            textView.text = "Sonuç : ${x - y}"
-        }
-
         // fun substraction try:
         println(substraction(10 , 20))
 
-        // return output:
-        // The "Int" after the parenthesis means we will return an Int result:
-        fun addition(a : Int , b : Int) : Int{
-            textView.text = "Sonuç : ${a + b}" // for emulator
-            return a + b // for logcat output
-
-        }
-
         // fun additon try:
         println(addition(10,50))
+
+        // setOnClickListener method (onClick method alternative):
 
 
     }
@@ -60,13 +46,27 @@ class MainActivity : AppCompatActivity() {
         println("Second function executed...")
     }
 
+    // take input:
+    // "Unit" means empty or space at Kotlin. It is proof that it will not return any object at the end.
+    fun substraction(x : Int , y : Int){
+        textViewID.text = "Sonuç : ${x - y}"
+    }
+
+    // return output:
+    // The "Int" after the parenthesis means we will return an Int result:
+    fun addition(a : Int , b : Int) : Int{
+        textViewID.text = "Sonuç : ${a + b}" // for emulator
+        return a + b // for logcat output
+
+    }
+
     // onClick method for button (id = buttonID):
     // We write "view" inside the function to indicate that it will be called by a view.
     // view : value , View : Class
     fun onClickChange(view : View){
 
-        //val additionResult = addition(10 , 50)
-       // textView.text = "Sonuç : ${additionResult}"
+        val additionResult = addition(20 , 50)
+        textViewID.text = "Sonuç : ${additionResult}"
 
 
     }
