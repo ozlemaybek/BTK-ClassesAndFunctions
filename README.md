@@ -1,5 +1,7 @@
 # BTK-ClassesAndFunctions
 
+## Kotlin İle Android Mobil Uygulama Geliştirme Eğitimi Temel Seviye (BTK AKADEMİ) Notlarım
+
 >"final" anahtar sözcüğü, değişkenin değerinin bir daha değiştirilmemesi için kullanılır.
 
 >"public", tüm sınıflardan erişilebilir anlamına gelir.
@@ -32,4 +34,6 @@
 
 ![image](https://user-images.githubusercontent.com/109730490/181212596-f18722d0-378f-4013-8d7c-e4c06bd2f890.png)
 
+#### Kaynaklar
 
+- [BTK Akademi](https://www.btkakademi.gov.tr/portal/course/kotlin-ile-android-mobil-uygulama-gelistirme-egitimi-temel-seviye-10274)
