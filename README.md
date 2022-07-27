@@ -1,31 +1,35 @@
 # BTK-ClassesAndFunctions
 
->The "final" keyword is used so that the value of the variable cannot be changed again.
+>"final" anahtar sözcüğü, değişkenin değerinin bir daha değiştirilmemesi için kullanılır.
 
->"public" means accessible from all classes.
+>"public", tüm sınıflardan erişilebilir anlamına gelir.
 
->"this" refers to the class we are in.
+>"this" içinde bulunduğumuz sınıfa referans verir.
 
->before Kotlin:
+>Kotlin'den önce:
 
 ![image](https://user-images.githubusercontent.com/109730490/180984851-32c92d48-d553-4f6f-9ef4-a880a11ea6ac.png)
 
->new feature of kotlin:
+>Kotlin ile gelen yeni özellik:
 
 ![image](https://user-images.githubusercontent.com/109730490/180985729-fcfd6a9a-107a-4764-bfb0-cb2db6abacd5.png)
 
->There are 4 access levels in Kotlin:
+>Kotlin'de 4 tane erişim seviyesi var:
 
-- 1 ) public: Accessible from everywhere.
+- 1 ) public: Her yerden erişilebilir.
 
-- 2 ) private: It can only be used within the class we are writing. It cannot be accessed from elsewhere.
+- 2 ) private: Sadece yazdığımız sınıf içinde kullanılabilir. Başka bir yerden erişilemez.
 
-- 3 ) protected: If there is another class in the class file, it can be accessed from there.
+- 3 ) protected: Sınıf dosyasında başka bir sınıf varsa oradan erişilebilir.
 
-- 4 ) internal: It can only be accessed from within our own modules. So, it can be accessed from everywhere in the project, but if we add an external library, it cannot be accessed from there.
+- 4 ) internal: Sadece kendi modüllerimizin içinden erişilebilir. Yani proje içerisinde her yerden erişilebilir ancak harici bir kütüphane eklersek oradan erişilemez.
 
->If we haven't added anything, it is considered "public" by default.
+>Hiçbir şey ekelemdiysek default olarak public kabul edilir.
 
->The way to access a private variable from outside the class is getters and setters. If I want it to see but not change, I use the getter but comment the setter.
+>Private bir değişkene sınıf dışından erişmenin yolu getter ve setter'lardır. Başka bir yazılımcının görebilmesini, bastırabilmesini ama değiştirememesini istiyorsam; getter'ı kullanırım ancak setter'ları yoruma alırım.
+
+>Eğer bu hata mesajını alıyorsak null olan bir değere null değilmiş gibi davranıyoruz demektir:
+
+![image](https://user-images.githubusercontent.com/109730490/181212596-f18722d0-378f-4013-8d7c-e4c06bd2f890.png)
 
 
